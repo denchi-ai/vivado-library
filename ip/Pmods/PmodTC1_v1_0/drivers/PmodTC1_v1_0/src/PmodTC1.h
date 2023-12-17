@@ -20,6 +20,9 @@
 
 #ifndef PMODTC1_H
 #define PMODTC1_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /****************** Include Files ********************/
 
@@ -45,4 +48,7 @@ double TC1_getTemp(PmodTC1 *InstancePtr);
 double TC1_getAMBTemp(PmodTC1 *InstancePtr);
 double TC1_tempC2F(double celsius);
 
+#ifdef __cplusplus
+}
+#endif
 #endif // PMODTC1_H
